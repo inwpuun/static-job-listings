@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap');
+
+* {
+    font-family: 'League Spartan', sans-serif;
+    color: hsl(180, 8%, 52%)
+}
+
+body {
+    display: flex;
+    background-color: hsl(180, 52%, 96%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.job-list-item {
+    display: flex;
+    background-color: white;
+    /* width: 77.2%; */
+    width: 77vw;
+    height: 18vh;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 20px 0;
+    box-shadow: 5px 10px 10px 0px hsl(180, 58%, 79%);
+}
+
+.job-list-item img {
+    justify-self: center;
+    margin: 0 0 0 35px;
+}
+
+.job-list-item .job-list-item__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 0 0 20px;
+    width: 100%;
+    /* background: gray; */
+}
+
+.job-list-item .job-list-item__info .job-list-item__info__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70%;
+    margin: 5px 0 10px 0;
+}
+
+.job-list-item .job-list-item__info .job-list-item__info__top h1 {
+    margin: 0 0 0 0;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.job-list-item .job-list-item__info .job-list-item__info__top .job-featured {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.job-list-item .job-list-item__info .job-list-item__info__top .job-featured ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 20px;
+    list-style: none;
+}
+
+.job-list-item .job-list-item__info .job-list-item__info__top .job-featured ul li {
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    margin: 0 10px 0 0;
+}
+
+.job-list-item .job-list-item__info .job-list-item__info__top .job-featured ul .featured {
+    background-color: hsl(180, 14%, 20%);
+}
+
+.job-list-item .job-list-item__info h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: hsl(180, 14%, 20%);
+    font-weight: 700;
+}
+
+.job-list-item .job-list-item__info .job-list-item__info__buttom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    margin: 0 0 10px 0;
+}
+
+.job-list-item .job-list-item__info .job-list-item__info__buttom p {
+    margin: 0 0 0 0;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0 12px 0 0;
+}
+
+.job-list-item .job-languages {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-self: flex-end;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 35px 0 20px;
+}
+
+.job-list-item .job-languages ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: hsl(180, 8%, 52%);
+    font-weight: 500;
+    gap: 15px;
+    list-style: none;
+}
+
+.job-list-item .job-languages ul li {
+    display: flex;
+    font-size: 15px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    background: hsl(180, 31%, 95%);
+}
