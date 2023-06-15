@@ -1,28 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap');
 
-* {
+@media (min-width: 1060px) {
+    * {
     font-family: 'League Spartan', sans-serif;
     color: hsl(180, 8%, 52%)
 }
 
 body {
     display: flex;
-    background-color: hsl(180, 52%, 96%);
+    background: hsl(180, 52%, 96%) url(/bg-header-desktop.svg) no-repeat ;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
 }
 
+.topPage {
+    height: 185px;
+}
+
+
+.filterBox {
+    display: flex;
+    background: white;
+    width: 77vw;
+    height: 10vh;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 5px;
+    margin: -80px 0 40px 0;
+    box-shadow: 5px 10px 10px 0px hsl(180, 58%, 79%);
+}
+
+.filterBox ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 20px;
+    list-style: none;
+}
+
+.filterBox ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 0 20px;
+    padding: 0 0 0 0;
+    background: hsl(180, 31%, 95%);
+    border-radius: 5px;
+    list-style: none;
+}
+
+.filterBox ul li p {
+    cursor: default;
+    margin: 0 0 0 0;
+    padding: 8px;
+}
+
+
+.filterBox ul li button {
+    padding: 8px;
+    border: transparent;
+    border-radius: 0 5px 5px 0;
+    font-weight: bold;
+    color: white;
+    background: hsl(180, 8%, 52%);
+    cursor: pointer;
+}
+
+.filterBox ul li button:hover {
+    background: hsl(180, 14%, 20%);
+}
+
+.filterBox .rightClear {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.filterBox span {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 30px 0 0;
+    cursor: pointer;
+}
+
+.filterBox span:hover {
+    text-decoration: underline;
+}
+
+#joblist {
+    padding: 0 0 0 0;
+}
+
 .job-list-item {
     display: flex;
     background-color: white;
-    /* width: 77.2%; */
     width: 77vw;
     height: 18vh;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     margin: 0 0 20px 0;
+    border-radius: 5px;
     box-shadow: 5px 10px 10px 0px hsl(180, 58%, 79%);
 }
 
@@ -91,6 +175,11 @@ body {
     font-size: 18px;
     color: hsl(180, 14%, 20%);
     font-weight: 700;
+    cursor: pointer;
+}
+
+.job-list-item .job-list-item__info h2:hover {
+    color: hsl(180, 29%, 50%);
 }
 
 .job-list-item .job-list-item__info .job-list-item__info__buttom {
@@ -133,7 +222,266 @@ body {
 .job-list-item .job-languages ul li {
     display: flex;
     font-size: 15px;
-    padding: 5px 5px 5px 5px;
+    padding: 8px;
     border-radius: 5px;
+    background: hsl(180, 52%, 96%);
+    cursor: pointer;
+}
+
+.job-list-item .job-languages ul li:hover {
+    background: hsl(180, 8%, 52%);
+    color: white;
+}
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 1060px) {
+    * {
+    font-family: 'League Spartan', sans-serif;
+    color: hsl(180, 8%, 52%)
+}
+
+body {
+    display: flex;
+    background: hsl(180, 52%, 96%) url(/bg-header-mobile.svg) repeat-x  ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.topPage {
+    height: 175px;
+}
+
+
+.filterBox {
+    display: flex;
+    background: white;
+    width: 77vw;
+    height: 13vh;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: -80px 0 40px 0;
+    border-radius: 5px;
+    box-shadow: 5px 10px 10px 0px hsl(180, 58%, 79%);
+}
+
+.filterBox ul {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 15px 0 0 0;
+    padding: 0 0 0 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.filterBox ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 15px 15px;
+    padding: 0 0 0 0;
     background: hsl(180, 31%, 95%);
+    border-radius: 5px;
+    list-style: none;
+}
+
+.filterBox ul li p {
+    cursor: default;
+    margin: 0 0 0 0;
+    padding: 8px;
+}
+
+
+.filterBox ul li button {
+    padding: 8px;
+    border: transparent;
+    border-radius: 0 5px 5px 0;
+    font-weight: bold;
+    color: white;
+    background: hsl(180, 8%, 52%);
+    cursor: pointer;
+}
+
+.filterBox ul li button:hover {
+    background: hsl(180, 14%, 20%);
+}
+
+.filterBox .rightClear {
+    display: flex;
+    /* width: inherit; */
+    height: inherit;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.filterBox span {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 30px 0 0;
+    cursor: pointer;
+}
+
+.filterBox span:hover {
+    text-decoration: underline;
+}
+
+#joblist {
+    padding: 0 0 0 0;
+}
+
+.job-list-item {
+    display: flex;
+    background-color: white;
+    width: 77vw;
+    height: 30vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 0 35px 0;
+    border-radius: 5px;
+    box-shadow: 5px 10px 10px 0px hsl(180, 58%, 79%);
+}
+
+.job-list-item img {
+    justify-self: flex-start;
+    width: 15%;
+    margin: -20px 0 0 20px;
+}
+
+.job-list-item .job-list-item__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 0 0 15px;
+    width: 100%;
+    /* background: gray; */
+}
+
+.job-list-item .job-list-item__info .job-list-item__info__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70%;
+    margin: 5px 0 12px 0;
+}
+
+.job-list-item .job-list-item__info .job-list-item__info__top h1 {
+    margin: 0 0 0 0;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.job-list-item .job-list-item__info .job-list-item__info__top .job-featured {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.job-list-item .job-list-item__info .job-list-item__info__top .job-featured ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 20px;
+    list-style: none;
+}
+
+.job-list-item .job-list-item__info .job-list-item__info__top .job-featured ul li {
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    margin: 0 10px 0 0;
+}
+
+.job-list-item .job-list-item__info .job-list-item__info__top .job-featured ul .featured {
+    background-color: hsl(180, 14%, 20%);
+}
+
+.job-list-item .job-list-item__info h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: hsl(180, 14%, 20%);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.job-list-item .job-list-item__info h2:hover {
+    color: hsl(180, 29%, 50%);
+}
+
+.job-list-item .job-list-item__info .job-list-item__info__buttom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    margin: 5px 0 17px 0;
+}
+
+.job-list-item .job-list-item__info:after {
+    content: "";
+    display: flex;
+    width: 87%;
+    align-self: flex-start;
+    height: 1px;
+    background-color: hsl(180, 18%, 73%);
+    margin: 0 0 17px 0;
+}
+
+.job-list-item .job-list-item__info .job-list-item__info__buttom p {
+    margin: 0 0 0 0;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0 12px 0 0;
+}
+
+.job-list-item .job-languages {
+    display: flex;
+    /* width: 100%; */
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 15px 0 15px;
+}
+
+.job-list-item .job-languages ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: hsl(180, 8%, 52%);
+    font-weight: 500;
+    padding: 0 0 0 0;
+    gap: 15px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.job-list-item .job-languages ul li {
+    display: flex;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 5px;
+    background: hsl(180, 52%, 96%);
+    cursor: pointer;
+}
+
+.job-list-item .job-languages ul li:hover {
+    background: hsl(180, 8%, 52%);
+    color: white;
+}
 }
